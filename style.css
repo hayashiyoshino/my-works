@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+/**はすべての要素を表すメタタグ。
+box-sizingはボクスサイズの算出方法を指定するためのプロパティ。通常paddingを使うと指定した分要素全体が多いきくなった上で余白が作られてしまう。それを防ぐのがbox-sizing: border-box;*/
+
+
+body {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  background: url('IMG_0007.jpg') fixed;
+  background-size: cover;
+}
+/*背景画像はbackgroundプロパティのurlで設定することができる。
+スクロールされても固定されるようにfixedを指定している。
+背景画像の大きさは、background-sizeで指定する。
+*/
+.header {
+  padding: 170px 30px 80px;
+  height: 100vh;
+  background-color: rgba(25, 25, 120, 0.8);
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size : 1.2rem;
+}
+
+.site-title {
+  margin: 50px;
+  font-size: 4.5rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+}
+
+.button {
+  display :inline-block;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+/*display: inline-blockを使うことで要素を横並びにすることができる。*/
+/*border-radiusは四角形の角を丸くするためのプロパティ。*/
+texi-decoration: none;は通常リンクには下線が引かれるが、今回は不要なためnoneを指定
+.button:hover {
+  opacity: 0.6;
+}
+
+.button-orange {
+  background-color: #f1b400;
+}
+
+.about {
+  height: 100vh;
+  padding: 80px 30px;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.about-text {
+  width: 600px;
+  margin: 30px auto;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  border-bottom: double 4px #999;
+}
+
+.works {
+  height: 100vh;
+  background-color: #383634;
+}
+
+.contact {
+  height: 100vh;
+  background-color: rgba(25, 25, 120, 0.8);
+}
